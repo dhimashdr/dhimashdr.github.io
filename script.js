@@ -2,16 +2,9 @@ const openNav = document.getElementById('open-nav');
 const closeNav = document.getElementById('close-nav');
 const mobileNavContent = document.getElementById('mobile-navbars-contents');
 
-const displayNavbars = () => {
-    mobileNavContent.style.display = 'block';
-}
-
-const hideNavbars = () => {
-    mobileNavContent.style.display = 'none';
-}
-
-openNav.addEventListener('click', displayNavbars);
-closeNav.addEventListener('click', hideNavbars);
+openNav.addEventListener('click', () => {
+    mobileNavContent.classList.toggle('hidden');
+});
 
 //
 const toggle = document.getElementById('toggleDark');
