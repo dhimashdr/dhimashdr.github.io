@@ -38,8 +38,8 @@ const greetings = ['Halo', 'Hello', 'Bonjour', 'Ciao', 'こんにちは', '你�
 const iniTeks = 'ciao'
 
 let temp = '';
-let i = 0;
 let j = 0;
+let i = greetings[j].length;
 let isWriting = true;
 let typeDelay = 450
 
@@ -50,7 +50,7 @@ const typing = () => {
     i++
     if(i === greetings[j].length+1){
         isWriting = false;
-        typeDelay = 1300
+        typeDelay = 1350
     }
     } else {
         typeDelay = 125
