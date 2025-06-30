@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@layer components {
+    .huhu {
+        @apply bg-green-400 text-black font-bold;
+    }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
