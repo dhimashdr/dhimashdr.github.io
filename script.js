@@ -32,8 +32,41 @@ const filter = () => {
     }
 }
 
-const result = document.getElementById('result')
+const hello = document.getElementById('hello')
+const greetings = ['Halo', 'Hello', 'Bonjour', 'Ciao', 'こんにちは', '你好', 'مرحبا']
 
-const resultText = "Hello"
+const iniTeks = 'ciao'
 
-result.textContent = resultText.substring(0,2)
+let temp = '';
+let i = 0;
+let j = 0;
+let isWriting = true;
+let typeDelay = 450
+
+const typing = () => {
+    if(isWriting){
+        typeDelay = 250
+        hello.textContent = greetings[j].substring(0,i)
+    i++
+    if(i === greetings[j].length+1){
+        isWriting = false;
+        typeDelay = 1300
+    }
+    } else {
+        typeDelay = 125
+        hello.textContent = greetings[j].substring(0,i)
+        i--
+    if(i === 0){
+        isWriting = true;
+        j++
+        if(j === greetings.length){
+            j = 0;
+        }
+    }
+    }
+    setTimeout(typing, typeDelay)
+}
+
+typing()
+
+console.log(temp)

@@ -44,21 +44,22 @@
     </button>
     <div class="h-screen w-full flex flex-col sm:flex-row bg-slate-900" id="hero-section">
     <div class="flex-3/5 bg-slate-900 flex justify-center flex-col">
-        <div class="w-fit mx-6">
-            <div id="hello" class="font-bold text-6xl">Hello</div>
-            <p id="description" class="text-sm font-light mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates nobis impedit deserunt porro deleniti quo quis, autem ab perspiciatis totam libero itaque assumenda animi, perferendis nostrum tempore ducimus est!</p>
+        <div class="w-fit mx-8">
+            <div id="hello" class="font-bold text-6xl h-16"></div>
+            <p id="description" class="text-sm font-light mt-2">Welcome to my personal page. Nice to meet you! </p>
         </div>
     </div>
     <div class="hidden sm:flex sm:flex-2/5 bg-white relative">
-        <div class="w-1/2 h-2/5 absolute bg-cover bg-center bg-no-repeat" style="background-image: url(https://i.pinimg.com/736x/ec/19/44/ec1944602ee3526df692940264f57083.jpg);">
+        <div class="w-1/2 h-2/5 absolute bg-cover bg-center bg-no-repeat" style="background-image: url(images/grid-2.png);">
         </div>
         <div class="w-1/2 h-3/5 bg-black absolute bottom-0 flex">
-            <div class="mx-4 my-auto font-mono" id="cmd">print("Hello")
-                print("world!")
+            <div class="mx-4 my-auto font-mono" id="cmd">
+                <p>def greetings():</p>
+                <pre>   print("Hello world!")</pre>
             </div>
         </div>
-        <div class="w-1/2 h-3/5 bg-red-400 absolute right-0"></div>
-        <div class="w-1/2 h-2/5 bg-red-200 absolute bottom-0 right-0"></div>
+        <div class="w-1/2 h-3/5 bg-black absolute right-0 bg-cover bg-center bg-no-repeat" style="background-image: url(images/grid-3.jpg);"></div>
+        <div class="w-1/2 h-2/5 bg-black absolute bottom-0 right-0 bg-cover bg-no-repeat bg-center" style="background-image: url(images/grid-1.jpg);"></div>
         <div class="absolute w-2 bg-white h-full"></div>
         <div class="absolute w-2 bg-white h-full right-0"></div>
         <div class="absolute w-2 bg-white h-full right-1/2"></div>
@@ -78,7 +79,11 @@
             </div>
         </div>
         <div class="flex-2/3 md:flex-3/4">
-            <p>Hello! I'm Dimas. Currently studying mathematics at UGM. I have interest in computational mathematics, machine learning, and graphic design. It's nice to meet you 😄.</p>
+            <p>Hello! I'm Dimas. Currently studying mathematics at UGM. I have interest in computational mathematics, machine learning, and graphic design.</p>
+            <br>
+            <p>I have some hobbies like <a href="">reading books</a>, doing some <a href="">photography</a>, and learning new things.</p>
+            <br>
+            <p>Nice to meet you! 😊</p>
         </div>
     </div>
 </section>
@@ -94,7 +99,7 @@
                 <div class="relative mx-2 mt-2">
                     <div class="w-3 h-3 bg-cyan-600 rounded-full">
                 </div>
-                    <div class="absolute bg-cyan-600 w-1/4 h-18 right-2/5 top-1"></div>
+                    <div class="absolute bg-cyan-600 w-1/4 h-24 right-2/5 top-1"></div>
                 </div>
                     <div>
                         <h2 class="text-slate-400">2021 - 2025</h2>
@@ -296,13 +301,70 @@
 <section class="mx-8" id="books">
     <h1 class="text-4xl font-bold">Books I've Read</h1>
     <div class="h-[2px] w-full bg-slate-500"></div>
-    <div class="grid grid-cols-3 md:grid-cols-5 gap-2 mt-4">
-        <div class="h-56 md:h-64 w-full bg-cover bg-no-repeat bg-center flex group border-slate-300 border-[1px] relative" style="background-image: url(https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1521471564i/39322485.jpg);">
+    <div class="grid grid-cols-3 md:grid-cols-5 gap-3 lg:gap-12 mt-4">
+        <div class="h-56 md:h-64 lg:h-72 w-full bg-cover bg-no-repeat bg-top flex group border-slate-300 border-[1px] relative" style="background-image: url(https://cdn.gramedia.com/uploads/items/9789792235241_then_there_were_none_cov.jpg);">
             <div class="bg-black/80 w-full h-fit px-2 py-2 mb-0 mt-auto">
                 <h1 class="font-bold text-sm/4 sm:text-lg/4 mb-1">And Then There Were None</h1>
                 <h4 class="font-light text-xs">Agatha Christie</h4>
             </div>
             <div class="absolute w-full h-full group-hover:bg-black/40 transition-all duration-300"></div>
+        </div>
+        <div class="h-56 md:h-64 lg:h-72 w-full bg-cover bg-no-repeat bg-top flex group border-slate-300 border-[1px] relative" style="background-image: url(https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1514451819i/37755416.jpg);">
+            <div class="bg-black/80 w-full h-fit px-2 py-2 mb-0 mt-auto">
+                <h1 class="font-bold text-sm/4 sm:text-lg/4 mb-1">Crooked House</h1>
+                <h4 class="font-light text-xs">Agatha Christie</h4>
+            </div>
+            <div class="absolute w-full h-full group-hover:bg-black/40 transition-all duration-300"></div>
+        </div>
+        <div class="h-56 md:h-64 lg:h-72 w-full bg-cover bg-no-repeat bg-top flex group border-slate-300 border-[1px] relative" style="background-image: url(https://cdn.gramedia.com/uploads/items/9789792231366_Pesta_Halloween_Halloween_Party.jpg);">
+            <div class="bg-black/80 w-full h-fit px-2 py-2 mb-0 mt-auto">
+                <h1 class="font-bold text-sm/4 sm:text-lg/4 mb-1">Hallowe'en Party</h1>
+                <h4 class="font-light text-xs">Agatha Christie</h4>
+            </div>
+            <div class="absolute w-full h-full group-hover:bg-black/40 transition-all duration-300"></div>
+        </div>
+        <div class="h-56 md:h-64 lg:h-72 w-full bg-cover bg-no-repeat bg-top flex group border-slate-300 border-[1px] relative" style="background-image: url(https://cdn.gramedia.com/uploads/items/9789792285239_Pembunuhan-ABC-The-ABC-Murders---Cover-Baru.jpg);">
+            <div class="bg-black/80 w-full h-fit px-2 py-2 mb-0 mt-auto">
+                <h1 class="font-bold text-sm/4 sm:text-lg/4 mb-1">ABC Murders</h1>
+                <h4 class="font-light text-xs">Agatha Christie</h4>
+            </div>
+            <div class="absolute w-full h-full group-hover:bg-black/40 transition-all duration-300"></div>
+        </div>
+        <div class="h-56 md:h-64 lg:h-72 w-full bg-cover bg-no-repeat bg-top flex group border-slate-300 border-[1px] relative" style="background-image: url(https://cdn.gramedia.com/uploads/items/9786020339481_menuju-titik-nol-_towards-zero_-cover-baru.jpg);">
+            <div class="bg-black/80 w-full h-fit px-2 py-2 mb-0 mt-auto">
+                <h1 class="font-bold text-sm/4 sm:text-lg/4 mb-1">Towards Zero</h1>
+                <h4 class="font-light text-xs">Agatha Christie</h4>
+            </div>
+            <div class="absolute w-full h-full group-hover:bg-black/40 transition-all duration-300"></div>
+        </div>
+        <div class="h-56 md:h-64 lg:h-72 w-full bg-cover bg-no-repeat bg-top flex group border-slate-300 border-[1px] relative" style="background-image: url(https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/images/1/41478/big_covers/ID_GPU2018MTH02PDSNOTN.jpg);">
+            <div class="bg-black/80 w-full h-fit px-2 py-2 mb-0 mt-auto">
+                <h1 class="font-bold text-sm/4 sm:text-lg/4 mb-1">Death on the Nile</h1>
+                <h4 class="font-light text-xs">Agatha Christie</h4>
+            </div>
+            <div class="absolute w-full h-full group-hover:bg-black/40 transition-all duration-300"></div>
+        </div>
+        <div class="h-56 md:h-64 lg:h-72 w-full bg-cover bg-no-repeat bg-top flex group border-slate-300 border-[1px] relative" style="background-image: url(https://cdn.gramedia.com/uploads/items/9786025385810_Holy-Mother.jpg);">
+            <div class="bg-black/80 w-full h-fit px-2 py-2 mb-0 mt-auto">
+                <h1 class="font-bold text-sm/4 sm:text-lg/4 mb-1">Holy Mother</h1>
+                <h4 class="font-light text-xs">Akiyoshi Rikako</h4>
+            </div>
+            <div class="absolute w-full h-full group-hover:bg-black/40 transition-all duration-300"></div>
+        </div>
+        <div class="h-56 md:h-64 lg:h-72 w-full bg-cover bg-no-repeat bg-top flex group border-slate-300 border-[1px] relative" style="background-image: url(https://cdn.gramedia.com/uploads/items/SCHEDULED_SUICIDE_DAY.jpg);">
+            <div class="bg-black/80 w-full h-fit px-2 py-2 mb-0 mt-auto">
+                <h1 class="font-bold text-sm/4 sm:text-lg/4 mb-1">Scheduled Suicide Day</h1>
+                <h4 class="font-light text-xs">Akiyoshi Rikako</h4>
+            </div>
+            <div class="absolute w-full h-full group-hover:bg-black/40 transition-all duration-300"></div>
+        </div>
+        <div class="h-56 md:h-64 lg:h-72 w-full bg-cover bg-no-repeat bg-top flex group border-slate-300 border-[1px] relative" style="background-image: url(https://s3-ap-southeast-1.amazonaws.com/ebook-previews/40678/143505/1.jpg);">
+            <div class="bg-black/80 w-full h-fit px-2 py-2 mb-0 mt-auto">
+                <h1 class="font-bold text-sm/4 sm:text-lg/4 mb-1">Laut Bercerita</h1>
+                <h4 class="font-light text-xs">Leila S. Chudori</h4>
+            </div>
+            <div class="absolute w-full h-full group-hover:bg-black/40 transition-all duration-300"></div>
+        </div>
         </div>
     </div>
 </section>
@@ -310,7 +372,7 @@
 <br>
 <br>
 <section class="mx-8" id="socials">
-    <h1 class="text-4xl font-bold">Socials</h1>
+    <h1 class="text-4xl font-bold">Contacts</h1>
     <div class="h-[2px] w-full bg-slate-500"></div>
     <div class="grid grid-cols-1 sm:grid-cols-4 gap-2 mt-4">
         <a target="_blank" rel="noopener noreferrer" class="flex gap-2 group hover:bg-slate-700/50 transition-all duration-300 w-fit" href="https://www.linkedin.com/in/dimas-hendrico/">
